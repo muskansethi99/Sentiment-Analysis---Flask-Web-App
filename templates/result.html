@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <nav>
+    <a href="/home">Home</a> | 
+    <a href="/data">Data</a>
+  </nav>
+  <body>
+      <form action="/feedback" method="post">
+        <h1>Your have given {{pred}}</h1>
+        <input type="hidden" name="predict" value="{{pred}}">
+        <label for="feedback">Feedback:</label>
+        <input type="text"  name='feedbac'></input>
+        <input type="submit">
+        <textarea name='rev' hidden>{{review}}</textarea>
+        </form>
+  </body>

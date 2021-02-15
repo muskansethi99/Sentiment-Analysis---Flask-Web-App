@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+   <nav>
+      <a href="/home">Home</a> | 
+      <a href="/data">Data</a>
+    </nav>
+   <body>
+   
+      <table border = 1>
+         <thead>
+            <td>Reviews</td>
+            <td>Prediction</td>
+            <td>Feedback</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["review"]}}</td>
+               <td>{{row["Prediction"]}}</td>
+               <td>{{row["feedback"]}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+   </body>
+</html>
